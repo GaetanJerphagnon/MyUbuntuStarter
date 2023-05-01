@@ -195,18 +195,18 @@ docker-desktop:
 	fi
 
 vscode-settings:
-	@if [ -f /home/$$USER/.config/Code/User/settings.json ]; then \
-		if cat /home/$$USER/.config/Code/User/settings.json | grep "// My Settings" >/dev/null; then \
-			echo "${CHECKMARK} ${LIGHTPURPLE}VS Code settings${NOCOLOR} are already installed"; \
-		else \
-			rm /home/$$USER/.config/Code/User/settings.json; \
-			cp ./Assets/settings.json /home/$$USER/.config/Code/User/settings.json;\
-			echo  "${CHECKMARK} Copied ${LIGHTPURPLE}VSCode settings.json${NOCOLOR} ${OK}";\
-		fi;\
-	else \
+	@if [ ! -f /home/$$USER/.config/Code/User/settings.json >> /dev/null 2>&1 ]; then \
 		mkdir -p /home/$$USER/.config/Code ;\
 		mkdir -p /home/$$USER/.config/Code/User ;\
-	fi;
+		touch /home/$$USER/.config/Code/User/settings.json ;\
+	fi;\
+	if cat /home/$$USER/.config/Code/User/settings.json | grep "// My Settings" >> /dev/null 2>&1; then \
+		echo "${CHECKMARK} ${LIGHTPURPLE}VS Code settings${NOCOLOR} are already installed"; \
+	else \
+		rm /home/$$USER/.config/Code/User/settings.json; \
+		cp ./Assets/settings.json /home/$$USER/.config/Code/User/settings.json;\
+		echo  "${CHECKMARK} Copied ${LIGHTPURPLE}VSCode settings.json${NOCOLOR} ${OK}";\
+	fi;\
 
 
 vscode-extensions:
