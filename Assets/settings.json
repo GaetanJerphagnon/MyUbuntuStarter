@@ -1,117 +1,203 @@
-// My Settings
 {
-    "workbench.sideBar.location": "right",
-    "workbench.iconTheme": "vscode-great-icons",
-    "explorer.confirmDelete": false,
-    "emmet.includeLanguages": { "twig": "html" },
-    "workbench.colorCustomizations": {
-
-      // To check if theme is changing
-      // "editor.findMatchBackground": "#e0cc44a8", //Current SEARCH MATCH
-      // "editor.findMatchHighlightBackground": "#ff7b00a1" //Other SEARCH MATCHES
-
-      "editor.selectionBackground": "#bfbfbf",
-      "editor.selectionHighlightBorder": "#009dffbf",
-      "editor.selectionHighlightBackground": "#009dff6f",
+  "workbench.colorTheme": "Atom One Light",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.colorCustomizations": {
+    "[Atom One Light]": {
+      // One Light Colors
+      "terminal.foreground":"#ccd5e5",
+      "terminal.ansiBrightBlue":"#92A2D5",
+      "terminal.ansiBrightCyan":"#85B5BA",
+      "terminal.ansiBrightGreen":"#90B99F",
+      "terminal.ansiBrightMagenta":"#ACA1CF",
+      "terminal.ansiBrightRed":"#EA83A5",
+      "terminal.ansiBrightWhite":"#C9C7CD",
+      "terminal.ansiBrightYellow":"#E6B99D",
+      "terminal.ansiBlue":"#92A2D5",
+      "terminal.ansiCyan":"#0184BC",
+      "terminal.ansiGreen":"#50A14F",
+      "terminal.ansiMagenta":"#ACA1CF",
+      "terminal.ansiRed":"#EA83A5",
+      "terminal.ansiWhite":"#C9C7CD",
+      "terminal.ansiYellow":"#E6B99D",
+      "terminal.background" : "#4a3747",
+      "terminal.inactiveSelectionBackground": "#608e967e",
+      "terminalCursor.foreground": "#F5A191",
+      "editor.findMatchBackground": "#00f7ffc2", //Current SEARCH MATCH
+      "editor.findMatchHighlightBackground": "#00ff6ad2", //Other SEARCH MATCHES
+      "editor.selectionBackground": "#ad78a048",
+      "editor.inactiveSelectionBackground": "#a99eb87e",
+      "editor.selectionHighlightBackground": "#3fe6fc00",
       "editor.background": "#e0e0e0",
-      "editor.selection": "#f0f",
-      // "editorCursor.foreground": "#ffffff",
-      "terminalCursor.foreground": "#be8405",
-      "inlineparameters.annotationForeground": "#a3a3a3",
-      "inlineparameters.annotationBackground": "#ffffff10",
-      "terminal.inactiveSelectionBackground": "#6c92996f"
+      "editor.selectionHighlightBorder": "#e63ffc",
+      "editorCursor.foreground": "#682701",
+      "menu.background": "#65a6f0",
+      "menu.foreground": "#ffffff",
+      "menu.selectionBackground": "#ffed23",
+      "menu.selectionForeground": "#474747",
+      "menubar.selectionBackground": "#1e7eec",
+      "menubar.selectionForeground": "#ffffff",
     },
-    "terminal.integrated.fontWeight": "bold",
-    "editor.fontWeight": "bold",
-    "settingsSync.ignoredExtensions": [
-
-
-    ],
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Atom One Light",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "settingsSync.ignoredExtensions": [
+  ],
+  "settingsSync.ignoredSettings": [
+  ],
+  "explorer.confirmDelete": false,
+  "emmet.includeLanguages": { "twig": "html" },
+  "explorer.confirmDragAndDrop": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.maxTokenizationLineLength": 10000000,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorWidth": 4,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  // "editor.fontFamily": "Ubuntu Mono",
+  // "editor.fontWeight": "bold",
+  "editor.fontFamily": "Maple Mono",
+  "editor.fontSize": 14,
+  "editor.inlineSuggest.enabled": true,
+  "editor.letterSpacing": -0.5,
+  "editor.minimap.enabled": false,
+  "editor.hover.above":  false,
+  "editor.renderWhitespace": "all",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.largeFileOptimizations": false,
+  "editor.formatOnType": true,
+  "editor.tokenColorCustomizations": {
+    "[Atom One Light]": {
+      "textMateRules": [
+        {
+          "name": "New PHP Attributes in comment style",
+          "scope": [
+            "meta.attribute.php",
+            "meta.attribute.php string.quoted.single.php",
+            "meta.attribute.php punctuation.definition.string.begin.php",
+            "meta.attribute.php punctuation.definition.string.end.php",
+            "meta.attribute.php string.quoted.double.php",
+            "meta.attribute.php constant.numeric.decimal.php",
+            "meta.attribute.php constant.language.php"
+          ],
+          "settings": {
+            "foreground": "#a0a3a7"
+          }
+        }
+      ]
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "diffEditor.codeLens": true,
-    "colorize.languages": ["javascript", "scss", "css", "php"],
-    "security.workspace.trust.untrustedFiles": "open",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.cursorWidth": 2,
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorWidth": 2,
-    "terminal.integrated.fontFamily": "monospace",
-    "terminal.integrated.minimumContrastRatio": 1,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "inline-parameters.borderRadius": "5px",
-    "inline-parameters.fontStyle": "normal",
-    "inline-parameters.margin": "2px",
-    "inline-parameters.enabled": false,
-    "todo-tree.general.tags": [
-      "BUG",
-      "HACK",
-      "FIXME",
-      "TODO",
-      "XXX",
-      "[ ]",
-      "[x]"
-    ],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.fontWeightBold": "normal",
-    "editor.fontSize": 13,
-    "workbench.preferredDarkColorTheme": "Atom One Dark",
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "scm.alwaysShowActions": true,
-    "scm.alwaysShowRepositories": true,
-    "files.trimTrailingWhitespace": true,
-    "redhat.telemetry.enabled": false,
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-      "*": false,
-      "yaml": false,
-      "plaintext": false,
-      "markdown": false,
-      "php": false,
-      "smarty": false,
-      "javascript": false
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  // "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.fontFamily": "Maple Mono",
+  "terminal.integrated.minimumContrastRatio":  2.5,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontSize": 14,
+  // "terminal.integrated.enableMultiLinePasteWarning": false,
+  // "terminal.integrated.letterSpacing": -1,
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "redhat.telemetry.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "mikeburgh.xml-format"
+  },
+  "extensions.ignoreRecommendations": true,
+  "gitlens.graph.minimap.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.codeLens": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "catppuccin-icons.hidesExplorerArrows": true,
+  "tabsColor.byFileType": {
+    "php": {
+      "backgroundColor": "#6FA1FF55",
     },
-    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.lastDownload": 1670425310590,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "none",
-    "settingsSync.ignoredSettings": [
-
-    ],
-    "[json]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
+    "twig": {
+      "backgroundColor": "#5CC50055",
     },
-    "auto-close-tag.activationOnLanguage": [
-
-      "xml",
-      "php",
-      "blade",
-      "ejs",
-      "jinja",
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact",
-      "plaintext",
-      "markdown",
-      "vue",
-      "liquid",
-      "erb",
-      "lang-cfml",
-      "cfml",
-      "HTML (EEx)",
-      "HTML (Eex)",
-      "plist"
-    ],
-    "files.autoSave": "onFocusChange",
-    "workbench.startupEditor": "none",
-    "terminal.integrated.enableMultiLinePasteWarning": false
-  }
+    "yml": {
+      "backgroundColor": "#FF6F6F55",
+    },
+    "yaml": {
+      "backgroundColor": "#FF6F6F55",
+    },
+    "pdf": {
+      "backgroundColor": "#FF6F6F55",
+    },
+    "js": {
+      "backgroundColor": "#FFD04555",
+    },
+    "css": {
+      "backgroundColor": "#7DDAFF55",
+    },
+    "env": {
+      "backgroundColor": "#FF955355",
+    },
+    "xml": {
+      "backgroundColor": "#59FFB255",
+    },
+    "json": {
+      "backgroundColor": "#FFED4555",
+    },
+    "toml": {
+      "backgroundColor": "#FF00FF55",
+    },
+    "log": {
+      "backgroundColor": "#8f8f8f55",
+      "fontColor": "white",
+    }
+  },
+  "workbench.tree.indent": 15,
+  "database-client.showUser": true,
+  "workbench.editor.wrapTabs": true,
+  "explorer.compactFolders": false,
+  "css.hover.references": false,
+  "less.hover.references": false,
+  "scss.hover.references": false,
+  "html.hover.references": false,
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": true,
+    "remotes": true,
+    "stashes": false,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
+  "gitlens.currentLine.format": "${author, }${agoOrDate}${ • message|50?}",
+  "gitlens.blame.heatmap.location": "left",
+  "chat.commandCenter.enabled": false,
+  "database-client.autoSync": true,
+  "files.associations": {
+    "*.sqlbook": "sql",
+    "*.ndjson": "jsonl",
+    "*.dbclient-js": "javascript",
+    "*.tpl": "html",
+    ".env*": "dotenv"
+  },
+}
