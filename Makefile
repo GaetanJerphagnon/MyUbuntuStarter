@@ -36,7 +36,7 @@ CHECKMARK=${GREEN} ✅ ${NOCOLOR}
 WORKING=${BLINK} ⚙️ ${NOCOLOR}
 CROSS=${LIGHTRED} ❗ ${NOCOLOR}
 
-VSCODEXT = akamud.vscode-theme-onelight bmewburn.vscode-intelephense-client whatwedo.twig cweijan.vscode-database-client2 ms-azuretools.vscode-docker dzhavat.bracket-pair-toggler oderwat.indent-rainbow emmanuelbeziat.vscode-great-icons dotenv.dotenv-vscode redhat.vscode-yaml ms-vscode-remote.remote-ssh ms-vsliveshare.vsliveshare eamodio.gitlens quicktype.quicktype zainchen.json naumovs.color-highlight
+VSCODEXT = akamud.vscode-theme-onelight bmewburn.vscode-intelephense-client whatwedo.twig cweijan.vscode-database-client2 ms-azuretools.vscode-docker dzhavat.bracket-pair-toggler oderwat.indent-rainbow emmanuelbeziat.vscode-great-icons dotenv.dotenv-vscode redhat.vscode-yaml ms-vscode-remote.remote-ssh eamodio.gitlens zainchen.json naumovs.color-highlight editorconfig.editorconfig
 
 help:
 	@make -s header

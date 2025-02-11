@@ -22,7 +22,7 @@
       "terminal.ansiRed":"#EA83A5",
       "terminal.ansiWhite":"#C9C7CD",
       "terminal.ansiYellow":"#E6B99D",
-      "terminal.background" : "#4a3747",
+      "terminal.background" : "#324050",
       "terminal.inactiveSelectionBackground": "#608e967e",
       "terminalCursor.foreground": "#F5A191",
       "editor.findMatchBackground": "#00f7ffc2", //Current SEARCH MATCH
@@ -199,5 +199,5 @@
     "*.dbclient-js": "javascript",
     "*.tpl": "html",
     ".env*": "dotenv"
-  },
+  }
 }
